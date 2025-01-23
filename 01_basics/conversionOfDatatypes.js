@@ -26,7 +26,7 @@ console.log(bool3) // 0 => false
 
 let bool1 = Boolean(score)
 let bool4 = Boolean(s)
-let bool5 = Boolean("")
+let bool5 = Boolean("") 
 console.log(bool1) // 33 =>true
 console.log(bool4) // "Aayush" => true
 console.log(bool5) // "" => false
