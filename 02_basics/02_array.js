@@ -4,7 +4,7 @@
  marvel_heros.push(dc_heros)  //new array ko as a new element insert karega (concatenate nahi hoga)
  console.log(marvel_heros)
  marvel_heros.pop()
- 
+  
  const myArr = marvel_heros.concat(dc_heros)  //CONCATENATE
  console.log(myArr)
 
