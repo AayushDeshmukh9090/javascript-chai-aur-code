@@ -42,3 +42,40 @@ function name(userName = "Ram"){
 }
 console.log(name())
 console.log(name("Aayush"))
+
+//passing parameters in functions:
+
+function calculateCartPrices(...num1){
+    return num1
+}
+
+console.log(calculateCartPrices(100, 200, 300, 400, 500))
+
+function calculateCartPrices1(num2, num3, ...num1){
+    return num1
+}
+console.log(calculateCartPrices1(100, 200, 300, 400, 500))
+
+const person = {
+    name: "Sanjay",
+    location: "Aurangabad"
+}
+
+function passObject(myObject){
+    return `My name is ${myObject.name} and I live in ${myObject.location}`
+}
+
+console.log(passObject(person))
+
+console.log(passObject({
+    name: "Shaam",
+    location: "Kannad"
+}))
+
+const array = [1, 2, 3, 4, 5, 6]
+
+function passArray(myArray){
+    return myArray[1];
+}
+
+console.log(passArray(array))
