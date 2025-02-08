@@ -17,3 +17,7 @@ boolean = true or false
 null = stand alone value (type = object)
 undefined = kindda place holder for a value which is not defined yet (type = undefined)
 symbol = uniquness */
+
+console.log(!undefined)
+console.log(!null)
+console.log(!0)

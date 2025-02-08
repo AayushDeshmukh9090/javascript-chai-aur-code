@@ -17,6 +17,15 @@ console.log(typeof valueOfNumber1)
 console.log(valueOfNumber1)
 // "33abc" => NaN (Not a Number)
 
+function add(a, b) {
+    console.log(a + b);
+}
+add(3,4)
+add("3",4)
+add(3,"4")    //string hai to string me convert ho jayenge
+add("3","4")
+add(3.5,1)   //float me answer aayega
+
 let a = 1
 let b = 0
 let bool2 = Boolean(a)
