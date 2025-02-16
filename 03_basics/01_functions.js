@@ -13,6 +13,36 @@ function myName(){
 
 }
 
+//Ways of declaring a function inn javascript:
+//1. A standard way to define a function using the function keyword.(function declaration)
+function greet1(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet1("Aayush")); // Output: Hello, Aayush!
+//✅ Hoisted: Can be called before its definition in the code.
+
+//2.Assigning a function to a variable.(function expression)
+const greet2 = function(name) {
+    return `Hello, ${name}!`;
+};
+console.log(greet2("Aayush"));
+//❌ Not hoisted: Cannot be used before its declaration.
+
+//3. Arrow function: A shorter syntax using the => operator.
+const greet3 = (name) => `Hello, ${name}!`;
+console.log(greet3("Aayush"));
+//More concise, best for simple functions.
+//🔹 Does not have its own this
+
+//4.IIFE: A function that runs immediately after definition.
+(function(name) {
+    console.log(`Hello, ${name}!`);
+})("Aayush");
+//Used to avoid polluting the global scope.
+//🔹 Wrapped in parentheses to execute immediately.
+
+
+//learnings:
 function add(number1, number2){
     console.log(number1 + number2);
 }
