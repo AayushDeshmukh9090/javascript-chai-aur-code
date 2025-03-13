@@ -77,3 +77,13 @@ function printMe(item){
 }
 
 numArr.forEach(printMe);
+
+//forEach loop return nothing so if we wish to store some values based on some conditions we have to write the logic explicitly,
+const newNums = [];
+
+arr.forEach( (item) => {
+    if(item >= 3){ newNums.push(item); }
+} )
+
+console.log(newNums);
+
