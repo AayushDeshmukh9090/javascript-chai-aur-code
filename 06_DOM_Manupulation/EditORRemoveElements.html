@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM_EditOrRemove</title>
+</head>
+<body style = "background-color: #212121; color: #fff;">
+    <ul class = "langauge">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `$(langName)`
+        document.querySelector('.language')
+        appendChild(li)
+
+    }
+    addLanguage("python")
+    addLanguage("typeScript")
+
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        //li.innerHTML = `$(langName)`
+        li.appendChild(document.createTextNode(langName))
+
+        document.querySelector('.language').appendChild(li)
+        
+    }
+
+    addOptiLanguage('golang')
+
+    //Edit:
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.inneHTML = "MOJO"
+    const newli = document.createElement('li')
+    secondLang.replaceWith(newli)
+    
+    //Edit
+    const firstLang = document.querySelector("li-first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+    
+    //remove
+    const lastLang = document.querySelector("li:last-child")
+    langName.remove()
+</script>
+</html>
